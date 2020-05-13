@@ -6,21 +6,21 @@
 </head>
   <body>
     <a-scene>
-      <a-assets>
-        <img id="imagem1" src="https://cdn.glitch.com/94ea319e-3412-4d2d-9a44-e4cac12f9c1f%2F19510619_1396792010390226_3719678955749450021_n.jpg?v=1589395757473">
-        <img id="imagem2" src="https://cdn.glitch.com/94ea319e-3412-4d2d-9a44-e4cac12f9c1f%2F19959348_1396792003723560_3715504232061756280_n.jpg?v=1589395763553">
-        <img id="imagem3" src="https://cdn.glitch.com/94ea319e-3412-4d2d-9a44-e4cac12f9c1f%2F95898449_2959183400817738_669882866586353664_n.jpg?v=1589395785516">
-      </a-assets>      
+      <a-assets>  
+        
+        <video id="video" autoplay="true" src="https://cdn.glitch.com/3e48c710-0265-473f-9bdf-2d45fc7ca205%2FWhatsApp%20Video%202020-05-10%20at%2020.49.22.mp4?v=1589400685915"></video>      
       
-      <a-camera position=" 0 1.6 0">
+      </a-assets>
+      
+      <!--camera e curso-->
+        <a-camera position=" 0 1.6 0">
         <a-cursor color="yellow"></a-cursor>      
-      </a-camera>
       
-      <a-image src="#imagem1" position="-1 1.6 -1"></a-image>
-      <a-image src="#imagem2" position="0.1 1.6 -1" ></a-image>
-      <a-image src="#imagem3" position="1.2 1.6 -1"></a-image>
+        </a-camera>
+      
+      <a-video src="#video" position="0 1.6 -2" width="4" height="2"></a-video>
                 
-      
+      <!--Ambiente-->
       <a-entity environment="preset: starry; groundColor: #445; grid: cross; skyColor: gradient;"></a-entity>
     </a-scene>
   </body>
