@@ -6,6 +6,7 @@
 </head>
   
   <body style="margin: 0px; overflow: hidden;">
+    
     <a-scene vr-mode-ui="enabled: false;" embledded arjs="debugUIEnabled: false;">
       
       <a-assets>  
@@ -14,14 +15,14 @@
                 
       </a-assets>
       
-        <a-maker present="hiro">        
+        <a-marker present="hiro">        
         
           <a-entity id="modelo3d"
                         position="0 0 0"
-                        scale="0.1 0.1 0.1"
+                        scale="5 5 5"
                         gltf-model="#modelo"></a-entity>
           
-        </a-maker>
+        </a-marker>
       
       
       <a-entity camera></a-entity>
