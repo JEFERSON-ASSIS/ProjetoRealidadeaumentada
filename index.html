@@ -51,11 +51,18 @@
         <a-marker present="hiro">        
         
           <a-entity id="modelo3d"
-                        rotation="0 0 0"
                         position="0 0 0"
                         scale="0.001 0.001 0.001"
-                        gltf-model="#modelo"></a-entity>
+                        gltf-model="#modelo"
+                        animation__rotacao="property: rotation;
+                                            dir: normal;
+                                            dur: 10000;
+                                            easing: easeInSine;
+                                            loop: true;
+                                            to: 0 180 0"></a-entity>
+
           
+          <a-circle id="base" radius="1" color="white" rotation="-90 0 0"></a-circle>          
         </a-marker>      
       
       <a-entity camera></a-entity>
