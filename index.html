@@ -1,27 +1,25 @@
 <html>
  <head>
-    <title>Template RV</title>
+    <title>Projeto 3d danone</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>    
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>     
 </head>
+  
   <body>
-    <a-scene>
-      <a-assets>  
-        
-        <video id="video" autoplay="true" src="https://cdn.glitch.com/3e48c710-0265-473f-9bdf-2d45fc7ca205%2FWhatsApp%20Video%202020-05-10%20at%2020.49.22.mp4?v=1589400685915"></video>      
+    <a-scene vr-mode-ui="enabled: false;" embledded arjs="debugUIEnabled: false;">
       
+      <a-assets>  
+        <a-assets-item id="modelo" src=""></a-assets-item>
+                
       </a-assets>
       
-      <!--camera e curso-->
-        <a-camera position=" 0 1.6 0">
-        <a-cursor color="yellow"></a-cursor>      
+        <a-maker present="hiro">        
+        
+        </a-maker>
       
-        </a-camera>
       
-      <a-video src="#video" position="0 1.6 -2" width="4" height="2"></a-video>
-                
-      <!--Ambiente-->
-      <a-entity environment="preset: starry; groundColor: #445; grid: cross; skyColor: gradient;"></a-entity>
+      <a-entity camera></a-entity>
+   
     </a-scene>
   </body>
 </html>
