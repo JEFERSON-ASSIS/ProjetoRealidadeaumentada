@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>XR Spinosaurus</title>
+    <title>Projeto Danone</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,7 +83,7 @@
         <!-- Model source: https://sketchfab.com/3d-models/spinosaurus-2135501583704537907645bf723685e7
              Model author: https://sketchfab.com/VapTor
              Model license: CC Attribution -->
-        <a-asset-item id="spinosaurus" src="https://cdn.glitch.com/d1692015-0d7d-43a1-8a39-148e83e97407%2FBONGO.glb?v=1591637358382" response-type="arraybuffer"></a-asset-item>
+        <a-asset-item id="spinosaurus" src="https://cdn.glitch.com/d1692015-0d7d-43a1-8a39-148e83e97407%2FBONGO.glb?v=1591643421050" response-type="arraybuffer"></a-asset-item>
       </a-assets>
       
       <a-camera position="0 1 -0.3"></a-camera>
@@ -99,7 +99,7 @@
                   shadow="cast: true; receive: false"></a-entity>
       </a-entity>  
       
-      <a-entity light="type: ambient; intensity: 2;"></a-entity>
+      <a-entity light="type: ambient; intensity: 6;"></a-entity>
       <a-light type="directional"
                light="castShadow: true;
                       shadowMapHeight: 1024;
@@ -110,12 +110,12 @@
                       shadowCameraTop: 5;"
                id="light"
                target="dino"
-               position="5 4 9"></a-light>
+               position="5 4 1"></a-light>
 
       <!-- This shadow-receiving plane is only visible in AR mode. -->
       <a-plane height="15" width="15" position="0 0 -3" rotation="-90 0 0"
                shadow="receive: true"
-               ar-shadows="opacity: 0.5"
+               ar-shadows="opacity: 0.3"
                visible="false"></a-plane>
     </a-scene>
   </body>
