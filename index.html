@@ -76,7 +76,7 @@
       });    
   </script>
   </head>  
-  <body>
+  <body style="margin: 0px; overflow=hidden;">
 
     <a-scene vr-mode-ui="enabled=false;" embledded arjs="debugUiEnabled: false;"
             renderer="precision: medium; antialias: false; alpha: true; logarithmicDepthBuffer: true; colorManagement: true;">
@@ -121,7 +121,7 @@
                visible="false"></a-plane>
     </a-scene>
 
-    <!--<div id="text">
+    <div id="text">
       <h1>A-Frame AR</h1>
     
      <p>
@@ -142,19 +142,19 @@
       <p>
         Powered by <a href="https://aframe.io/blog/aframe-v1.0.0/">A-Frame v1.0.0</a>.
       </p>
-    </div>-->
-   <!-- <script>
+    </div>
+   <script>
       function setSize(scale) {
         document.getElementById('dino').setAttribute('scale', {x: scale, y: scale, z: scale});
       }
       document.getElementById('btn_full').onclick = setSize.bind(this, 1);
       document.getElementById('btn_half').onclick = setSize.bind(this, 0.5);
       document.getElementById('btn_quarter').onclick = setSize.bind(this, 0.25);
-    </script>-->
+    </script>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-    <!--<div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>-->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
   </body>
 </html>
