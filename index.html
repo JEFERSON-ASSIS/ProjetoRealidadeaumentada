@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>teste com obj 3d</title>
+    <title>Teste projeto</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,11 +76,9 @@
       });    
   </script>
   </head>  
-  <body style="margin: 0px; overflow=hidden;">
+  <body>
 
-    <a-scene vr-mode-ui="enabled=false;" embledded arjs="debugUiEnabled: false;"
-            renderer="precision: medium; antialias: false; alpha: true; logarithmicDepthBuffer: true; colorManagement: true;">
-      
+    <a-scene>
       <a-assets timeout="30000">
         <!-- Model source: https://sketchfab.com/3d-models/spinosaurus-2135501583704537907645bf723685e7
              Model author: https://sketchfab.com/VapTor
@@ -121,15 +119,15 @@
                visible="false"></a-plane>
     </a-scene>
 
-    <div id="text">
-      <h1>A-Frame AR</h1>
+    <!--<div id="text">
+      <h1>A-Frame Spinosaurus for VR/AR</h1>
     
-     <p>
+      <p>
         Model: <a href="https://sketchfab.com/3d-models/spinosaurus-2135501583704537907645bf723685e7">Spinosaurus</a> by 
         <a href="https://sketchfab.com/VapTor">Vaptor-Studio</a>.
       </p>
       <p>
-        Size: <button id="btn_full">+</button>
+        Size: <button id="btn_full">Full</button>
         <button id="btn_half">1/2</button>
         <button id="btn_quarter">1/4</button>
       </p>
@@ -143,7 +141,7 @@
         Powered by <a href="https://aframe.io/blog/aframe-v1.0.0/">A-Frame v1.0.0</a>.
       </p>
     </div>
-   <script>
+    <script>
       function setSize(scale) {
         document.getElementById('dino').setAttribute('scale', {x: scale, y: scale, z: scale});
       }
@@ -154,7 +152,7 @@
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
+    <!--<div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>-->
   </body>
 </html>
