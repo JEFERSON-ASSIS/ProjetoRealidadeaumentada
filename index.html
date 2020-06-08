@@ -99,7 +99,7 @@
                   shadow="cast: true; receive: false"></a-entity>
       </a-entity>  
       
-      <a-entity light="type: ambient; intensity: 3;"></a-entity>
+      <a-entity light="type: ambient; intensity: 2;"></a-entity>
       <a-light type="directional"
                light="castShadow: true;
                       shadowMapHeight: 1024;
@@ -115,7 +115,7 @@
       <!-- This shadow-receiving plane is only visible in AR mode. -->
       <a-plane height="15" width="15" position="0 0 -3" rotation="-90 0 0"
                shadow="receive: true"
-               ar-shadows="opacity: 0.3"
+               ar-shadows="opacity: 0.5"
                visible="false"></a-plane>
     </a-scene>
   </body>
